@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Intentional error introduced - incorrect command
-                sh './main/hello'
+                sh './main/hello-nonexistent'
                 echo 'Test Stage Successful'
             }
         }
